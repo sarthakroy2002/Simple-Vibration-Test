@@ -26,3 +26,14 @@ jobs:
       with:
         name: app-debug.apk
         path: app/build/outputs/apk/debug/app-debug.apk
+
+    - name: Create release
+      uses: marvinpinto/action-automatic-releases@latest
+      if: github.ref == 'refs/heads/master'
+      with:
+        repo_token: ${{ secrets.TOKEN_PASS }}
+        automatic_release_tag: "latest"
+        prerelease: false
+        title: Simple Vibration Test - ${{ github.sha }}
+        files: |
+          app/build/outputs/apk/debug/app-debug.apk
