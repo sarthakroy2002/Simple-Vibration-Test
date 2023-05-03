@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Simple Vibration Test</string>
+    <string name="normal_vibration">NORMAL VIBRATION</string>
+    <string name="click_vibration">CLICK VIBRATION</string>
+    <string name="double_click_vibration">DOUBLE CLICK VIBRATION</string>
+    <string name="tick_vibration">TICK VIBRATION</string>
+    <string name="heavy_click_effect_vibration">HEAVY CLICK VIBRATION</string>
+    <string name="about" translatable="false">About</string>
+</resources>
