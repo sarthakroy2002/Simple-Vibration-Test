@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
             vibrationEffect1 = VibrationEffect.createOneShot(1000, VibrationEffect.DEFAULT_AMPLITUDE);
             vibrator.cancel();
             vibrator.vibrate(CombinedVibration.createParallel(vibrationEffect1));
-            Toast.makeText(this, "NORMAL VIBRATION", Toast.LENGTH_SHORT).show();
         });
 
         bClickVibration.setOnClickListener(v -> {
@@ -43,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
             vibrationEffect2 = VibrationEffect.createPredefined(VibrationEffect.EFFECT_CLICK);
             vibrator.cancel();
             vibrator.vibrate(CombinedVibration.createParallel(vibrationEffect2));
-            Toast.makeText(this, "CLICK VIBRATION", Toast.LENGTH_SHORT).show();
         });
 
         bDoubleClickVibration.setOnClickListener(v -> {
@@ -51,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
             vibrationEffect3 = VibrationEffect.createPredefined(VibrationEffect.EFFECT_DOUBLE_CLICK);
             vibrator.cancel();
             vibrator.vibrate(CombinedVibration.createParallel(vibrationEffect3));
-            Toast.makeText(this, "DOUBLE CLICK VIBRATION", Toast.LENGTH_SHORT).show();
         });
 
         bTickVibration.setOnClickListener(v -> {
@@ -59,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
             vibrationEffect4 = VibrationEffect.createPredefined(VibrationEffect.EFFECT_TICK);
             vibrator.cancel();
             vibrator.vibrate(CombinedVibration.createParallel(vibrationEffect4));
-            Toast.makeText(this, "TICK VIBRATION", Toast.LENGTH_SHORT).show();
         });
 
         bHeavyClickVibration.setOnClickListener(v -> {
@@ -67,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
             vibrationEffect5 = VibrationEffect.createPredefined(VibrationEffect.EFFECT_HEAVY_CLICK);
             vibrator.cancel();
             vibrator.vibrate(CombinedVibration.createParallel(vibrationEffect5));
-            Toast.makeText(this, "HEAVY CLICK VIBRATION", Toast.LENGTH_SHORT).show();
         });
 
         tTitle.setOnClickListener(v -> {
